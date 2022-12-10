@@ -1,0 +1,15 @@
+
+<h2 mat-dialog-title>Chat window</h2>
+<mat-dialog-content class="mat-typography">
+  <h3>Welcome</h3>
+  <label for="userReply">User: </label>
+    <input id="userReply" type="text" [formControl]="userReply">
+    <button type="button" (click)="updateReply()">Submit</button>
+    
+
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
